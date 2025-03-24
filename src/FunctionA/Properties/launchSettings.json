@@ -1,8 +1,8 @@
 {
   "profiles": {
-    "TestAzureFunction": {
+    "FunctionA": {
       "commandName": "Project",
-      "commandLineArgs": "--port 7025",
+      "commandLineArgs": "--port 7067",
       "launchBrowser": false
     }
   }

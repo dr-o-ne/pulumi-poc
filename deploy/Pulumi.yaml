@@ -1,4 +1,4 @@
-name: deploy
+name: pulumi-poc
 description: A minimal Azure Native C# Pulumi program
 runtime: dotnet
 config:

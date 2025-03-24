@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "FunctionB": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7100",
+      "launchBrowser": false
+    }
+  }
+}

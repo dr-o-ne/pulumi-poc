@@ -8,18 +8,23 @@ Ensure the following tools are installed before proceeding:
 - **Pulumi**: [Installation Instructions](https://www.pulumi.com/docs/iac/get-started/azure/begin/)
 - **Azure Functions Core Tools**: [GitHub Repository](https://github.com/Azure/azure-functions-core-tools)
 
+## Concepts:
+[Pulumi stack](https://www.pulumi.com/docs/iac/concepts/stacks/)
+
 ## Deployment Commands
 
-Use the following commands to manage the deployment:
+Use the following commands to manage the deployment of the stack by name:
 
 - **Deploy the infrastructure:**
   ```sh
-  pulumi up
+  pulumi up -s functionA
+  pulumi up -s functionB
   ```
 
 - **Destroy the infrastructure:**
   ```sh
-  pulumi destroy
+  pulumi destroy -s functionA
+  pulumi destroy -s functionB
   ```
 
 ## Known Issues
