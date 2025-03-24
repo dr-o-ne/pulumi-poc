@@ -63,9 +63,9 @@ internal sealed class AzureFunctionStack : Stack
             }
         });
 
-        var wait30Seconds = new Time.Sleep("wait30Seconds", new()
+        var waitTask = new Time.Sleep("wait60Seconds", new()
         {
-            CreateDuration = "30s",
+            CreateDuration = "60s",
         }, new CustomResourceOptions
         {
             DependsOn =
@@ -87,8 +87,8 @@ internal sealed class AzureFunctionStack : Stack
         {
             DependsOn =
             {
-                wait30Seconds
-            },
+                waitTask
+            }
         }
         ));
 
